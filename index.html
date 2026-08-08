@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国会議員データベース</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>国会議員データベース</h1>
+  <p class="subtitle">衆議院・参議院議員の客観データを検索・閲覧できます</p>
+</header>
+
+<main>
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="氏名・会派・選挙区で検索">
+    <select id="house-filter">
+      <option value="">院を選択(すべて)</option>
+      <option value="衆議院">衆議院</option>
+      <option value="参議院">参議院</option>
+    </select>
+  </div>
+
+  <p id="result-count"></p>
+
+  <div id="member-list" class="member-list"></div>
+</main>
+
+<footer>
+  <p>掲載データは各種公式情報源から出典を明記して収集しています。現在はサンプルデータで表示しています。</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
