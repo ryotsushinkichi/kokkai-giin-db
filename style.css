@@ -114,6 +114,38 @@ main {
   line-height: 1.5;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 1rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.pagination button:not(:disabled):hover {
+  border-color: var(--accent);
+}
+
+.page-status {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
 footer {
   text-align: center;
   color: var(--text-muted);
